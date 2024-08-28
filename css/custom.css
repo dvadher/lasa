@@ -1,5 +1,5 @@
 /*  font-family: "Inter", sans-serif;
-/* font-family: 'Oswald', sans-serif; */
+/* font-family: "Inter", system-ui; */
 /*================================= comoon css =================================*/
 html{
   scroll-behaviour : smooth;
@@ -20,7 +20,7 @@ p, span{
    font-family: "Inter", sans-serif;
 }
 h1, h2, h3, h4, h5{
-  font-family: 'Oswald', sans-serif;
+  font-family: "Inter", system-ui;
   color:#000;
   font-weight: 600;
 }
@@ -49,8 +49,7 @@ h1, h2, h3, h4, h5{
     line-height: 1.1;
     margin-bottom: 0;
     color: #fff;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
+    font-family: "Inter", system-ui;
 }
 span.text-gradiant {
   background-image: linear-gradient(to right,#00cd98,#6163da);
@@ -86,13 +85,15 @@ span.text-gradiant {
 
 /*================================= 4 Global Styles (#glob) =================================*/
 .page-content {
-  padding-top: 90px;
+  padding-top: 56px;
 }
 .section-spacer{
   padding:100px 0px;
 }
 .custom-logo{
-  width:80px;
+  width: 90px;
+  height: 44px;
+  object-fit: contain;
 }
 .navbar {
   /* box-shadow: -1px 4px 5px 1px rgba(20,14,20,.11); */
@@ -102,12 +103,12 @@ span.text-gradiant {
 a.navbar-nav-link {
   color: #000;
   font-weight: 600;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Inter", system-ui;
   text-transform: capitalize;
   font-size: 15px;
   font-family: "Inter", sans-serif;
   height: 100%;
-  border-right: 1px solid #1aa5ed33;
+  border-right: 1px solid #2a6ab333;
   width: 150px;
   display: flex;
   align-items: center;
@@ -115,7 +116,7 @@ a.navbar-nav-link {
   
 }
 a.navbar-nav-link:hover {
-  color: #e70488;
+  color: #99163e;
 }
 .auth-btn {
   font-size: 18px;
@@ -179,7 +180,7 @@ a.btn-border{
     border-radius: 50px 50px 50px 50px;
     padding: 15px 50px 15px 50px;
     display: inline-block;
-    border: 2px solid #1aa5ed;
+    border: 2px solid #2a6ab3;
 }
 .step-item:after {
   content: "";
@@ -439,7 +440,7 @@ a.btn-vote {
 }
 
 section.top_banner{
-  background-image: url(../images/Hero-Image-2.jpg);
+  background-image: url(../images/banner_2.jpeg);
   position: relative;
   background-size: cover;
   background-size: cover;
@@ -464,38 +465,39 @@ section.top_banner:after {
   z-index: 999;
 }
 .sub_heading{
-  color: #e70488;
-  font-family: 'Oswald', sans-serif;
+  color: #99163e;
+  font-family: "Inter", system-ui;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 20px;
 }
 .primary_btn {
-  background: #1aa5ed;
-  font-family: 'Oswald', sans-serif;
-  padding: 12px 45px;
+  background: #2a6ab3;
+  font-family: "Inter", system-ui;
+  padding: 12px 20px;
   display: inline-flex;
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
-  border:1px solid #1aa5ed;
+  border:1px solid #2a6ab3;
   border-radius: 8px !important;
-  height: 50px;
+  height: 44px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-top: 6px;
 
 }
 .primary_btn:hover{
   background: transparent;
-  color: #1aa5ed;
-  border-color: #1aa5ed;
+  color: #2a6ab3;
+  border-color: #2a6ab3;
 }
 .contact_icon {
   width: 40px;
   height: 40px;
-  background: #1aa5ed;
+  background: #2a6ab3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -516,14 +518,15 @@ section.top_banner:after {
   
 }
 .contact-banner-content h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Inter", system-ui;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
 }
 .contact-banner-content p {
-  color: #00adef !important;
-  font-family: 'Oswald', sans-serif;
+  color: #9b1640 !important;
+  font-family: "Inter", system-ui;
+  font-size: 14px;
 }
 .menu_contact {
   display: flex;
@@ -551,15 +554,19 @@ section.top_banner:after {
   margin-bottom: 24px;
 }
 .section_heading h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Inter", system-ui;
   color: #000;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 100%;
 }
 .section_heading {
   width: 55%;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .in-space{
   margin-top: 64px;
@@ -616,7 +623,7 @@ section.product {
   opacity: 40%;
 }
 .product_item:hover .btn-border {
-  background: #1aa5ed;
+  background: #2a6ab3;
   color: #fff !important;
 }
 .is_left {
@@ -628,10 +635,6 @@ section.product {
 .home_abt-col img {
   border-radius: 24px;
   object-fit: cover;
-}
-.home_abt-col.is_two {
-  position: relative;
- top: 83px;
 }
 .about-content-right h6 {
   font-size: 18px;
@@ -667,7 +670,7 @@ section.product {
   display: flex;
     justify-content: space-between;
     padding-top: 40px !important;
-    border-top: 2px solid #1aa5ed;
+    border-top: 2px solid #2a6ab3;
 }
 .footer_menu a {
   font-size: 14px;
@@ -725,6 +728,81 @@ section.trusted-by {
 .logo_im-wrapper img{
   border-radius: 24px;
 }
+.banner_contact-wrapper .contact-banner-content p {
+  color: #fff !important;
+}
+.industry_item {
+  position: relative;
+}
+.industry_item:after {
+  position: absolute;
+  content: '';
+  background: linear-gradient(to bottom, rgba(250, 66, 58, 0) 0%, #2a6ab3 80%, #2a6ab3 100%);
+  z-index: 1;
+  pointer-events: none;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  border-radius: 24px;
+}
+.induatry_content {
+  position: absolute;
+  z-index: 9;
+  left: 20px;
+  bottom: 10px;
+}
+.industry_im-wrapper img{
+  border-radius: 24px;
+  object-fit: cover;
+}
+.induatry_content h5 {
+  font-size: 24px;
+  color: #fff;
+}
+.industry_list .slick-slide{
+  margin: 0px 10px;
+}
+.industry_im-wrapper {
+  height: 400px;
+}
+
+.slick-next:before {
+  content: '→';
+  color: #2a6ab3;
+  opacity: 100%;
+  font-size: 50px;
+}
+button.slick-next.slick-arrow {
+  position: absolute;
+  top: -73px;
+}
+button.slick-prev.slick-arrow {
+  position: absolute;
+  top: -50px;
+  left: auto;
+  right: 22px;
+  background: #2a6ab3 !important;
+}
+button.slick-next.slick-arrow {
+  position: absolute;
+  top: -50px;
+  background: #2a6ab3 !important;
+}
+.slick-prev, .slick-next{
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 16px;
+}
+.slick-prev:before, .slick-next:before{
+  opacity: 100%;
+}
+.logo-slide .slick-arrow {
+  display: none;
+}
+
 /*=================================== media query css ===================================*/
 
   @media only screen and (min-width: 300px) and (max-width: 767px) { 
