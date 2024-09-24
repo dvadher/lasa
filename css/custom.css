@@ -84,9 +84,6 @@ span.text-gradiant {
   }
 
 /*================================= 4 Global Styles (#glob) =================================*/
-.page-content {
-  padding-top: 56px;
-}
 .section-spacer{
   padding:100px 0px;
 }
@@ -108,7 +105,6 @@ a.navbar-nav-link {
   font-size: 15px;
   font-family: "Inter", sans-serif;
   height: 100%;
-  border-right: 1px solid #2a6ab333;
   width: 150px;
   display: flex;
   align-items: center;
@@ -172,15 +168,21 @@ a.btn-gradiant {
   display: inline-block;
 }
 a.btn-border{
-  font-size: 16px;
-    font-weight: 700;
-    fill: #00cd98;
-    color: #00cd98;
-    background-color: #fff;
-    border-radius: 50px 50px 50px 50px;
-    padding: 15px 50px 15px 50px;
-    display: inline-block;
-    border: 2px solid #2a6ab3;
+  font-weight: 700;
+  background-color: #fff;
+  padding: 15px !important;
+  display: inline-block;
+  border: 2px solid #2a6ab3;
+  line-height: unset !important;
+  height: auto;
+  border-radius: 45px !important;
+  box-shadow: none;
+  text-transform: capitalize;
+  letter-spacing: unset;
+  font-size: 15px !important;
+  width: 199px;
+  color: #2a6ab3 !important;
+  text-align: center;
 }
 .step-item:after {
   content: "";
@@ -437,6 +439,8 @@ a.btn-vote {
 .menu_wrapper {
   display: flex;
   gap: 32px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 section.top_banner{
@@ -444,12 +448,13 @@ section.top_banner{
   position: relative;
   background-size: cover;
   background-size: cover;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-position: bottom;
+    padding: 80px 0px;
 }
 section.top_banner:after {
   background-image: linear-gradient(207deg, #000000 50%, #00abef8c 100%);
@@ -458,11 +463,13 @@ section.top_banner:after {
   width: 100%;
   height: 100%;
   top: 0;
-  opacity: 80%;
+  opacity: 57%
 }
 .top_banner-content {
   position: relative;
   z-index: 999;
+  width: 1000px;
+  margin: 0 auto;
 }
 .sub_heading{
   color: #99163e;
@@ -581,15 +588,13 @@ section.top_banner:after {
   border-bottom-right-radius: 32px;
   object-fit: cover;
 } 
-.product_im-wrapper {
-  margin-right: 45px;
-  padding-top: 40px;
-  border-bottom-right-radius: 24px;
-  height: 260px;
+.product_content h3 {
+  color: #4c4c4c;
+  font-size: 45px;
+  line-height: 130%;
+  margin-bottom: 10px !important;
 }
-.product_content {
-  padding: 40px 40px;
-}
+
 .btn-border{
   box-shadow: 0 0 0 2px #d3d3d3 inset;
   color: #000 !important;
@@ -616,9 +621,9 @@ img.shape_top {
   bottom: 0;
   right: 0;
 }
-section.product {
-  background: #f8f9fe;
-}
+/* section.product {
+  background: #f9f9ff;
+} */
 .shap_group {
   opacity: 40%;
 }
@@ -671,10 +676,11 @@ section.product {
     justify-content: space-between;
     padding-top: 40px !important;
     border-top: 2px solid #2a6ab3;
+    margin-top: 45px !important;
 }
 .footer_menu a {
   font-size: 14px;
-  color: #000;
+  color: #fff;
 }
 .blog_content {
   padding: 30px;
@@ -802,6 +808,179 @@ button.slick-next.slick-arrow {
 .logo-slide .slick-arrow {
   display: none;
 }
+.top_banner-content h1 {
+  font-size: 39px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.sub-banner_heading {
+  font-size: 22px;
+  font-weight: 500;
+}
+.menu_wrapper li, .footer_wid ul li {
+  list-style: none;
+}
+.menu_wrapper ul li a {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.menu_wrapper ul {
+  display: flex;
+  gap: 130px;
+  align-items: center;
+}
+.menu_center {
+  background-color: #2a6ab3;
+  border: 8px solid #fff;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.page-content {
+  padding-top:169px;
+}
+a.btn_header-contact {
+  text-align: center;
+  background-color: transparent;
+  color: #99163e;
+  background: rgba(255, 255, 255, 1);
+  border: 3px solid #99163e;
+  padding: 0.3em 1.125em;
+  border-radius: 2em;
+  font-weight: 700;
+}
+.navbar .container{
+  flex-wrap: wrap;
+}
+.top-menu{
+  background-color: #ededed;
+  
+}
+.top-menu {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.top-menu a, .top-menu span{
+  color: #8b99a1;
+}
+.top_list {
+  display: flex;
+  gap: 15px;
+}
+.top_product-list-icon img {
+  width: 55px;
+}
+.section_top_product {
+  background: #2a6ab3;
+}
+.top_product-list-item {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+.top_product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.section_top_product {
+  background: #2a6ab3;
+  padding: 40px 0px 20px;
+}
+.product_content li {
+  list-style: none;
+  padding-left: 20px;
+  position: relative;
+  color: #000;
+}
+.product_content li:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #2a6ab3;
+  left: 0px;
+  transform: rotate(45deg);
+  top: 9px;
+}
+span.text-blue {
+  color: #2a6ab3;
+}
+.product_im {
+  height: 400px;
+  border-radius: 12px;
+}
+.product_im img{
+  border-radius: 12px;
+}
+.product_content {
+  margin-left: 60px;
+}
+.product_content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.button_wrapper {
+  margin-top: 32px;
+}
+.procust_list-item.layout_right .product_content {
+  margin-left: 0;
+  margin-right: 60px;
+}
+
+.custom-footer {
+  padding: 40px 0px;
+  background: #111;
+}
+.footer_wid-header h5 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.footer_wid-header h5 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px !important;
+}
+.footer_wid ul {
+  padding: 0;
+}
+.footer_wid ul li a {
+  color: #fff !important;
+  font-size: 14px;
+}
+a.footer_btn {
+  background: #2a6ab3;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-flex;
+  margin-top: 40px;
+}
+.custom-footer .custom-logo{
+  width: 100px;
+    height: 100px;
+}.footer-copyright p, .footer-copyright span {
+  color: #fff;
+}
+.procust_list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+
 
 /*=================================== media query css ===================================*/
 
