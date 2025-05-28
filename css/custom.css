@@ -974,13 +974,13 @@ span.text-blue {
 .product_im img{
   border-radius: 12px;
 }
-.product_content {
-  margin-left: 60px;
-}
 .product_content ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.product_content h5 {
+    font-size: 24px;
 }
 .button_wrapper {
   margin-top: 32px;
@@ -1056,7 +1056,7 @@ a.footer_btn {
         }
 
 .primary_menu li {
-    list-style:s none;
+    list-style:none;
 }
  .slick-prev, .slick-next{
   display: none !important;
@@ -1074,7 +1074,15 @@ color:#fff;
     border-left: 3px solid #fff;
     padding-left: 20px;
 }
-
+a.btn_text {
+    color: #2a6ab3;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 3px;
+    display: inline-flex;
+    border-bottom: 1px solid #2a6ab3;
+    margin-top: 20px;
+}
 
 
 
