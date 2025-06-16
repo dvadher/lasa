@@ -103,10 +103,15 @@ $(document).ready(function () {
     
    // Add smooth scrolling to all links
 
+   
     
     AOS.init({
         duration: 1200,
-        })
+        });
+
+
+
+
     
 });/*====================== all js end ====================== */
 
