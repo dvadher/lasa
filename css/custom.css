@@ -10,7 +10,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     text-transform: none;
-    background: #fcf7ed !important;
+    background: #fff !important;
     overflow-x: hidden;
     color:#545454;
   }
@@ -1296,6 +1296,115 @@ section.top_slide.breadcrumb {
     margin-top: 52px;
     margin-bottom: 16px;
 }
+.tz-gallery a.lightbox {
+    display: block;
+    position: relative;
+}
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgb(46 76 142 / 70%);
+    content: '';
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.tz-gallery .lightbox:hover:after, .tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+.tz-gallery a.lightbox i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    background: #002957;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 14px;
+	opacity: 0;
+}
+.tz-gallery a:hover.lightbox i {
+    opacity: 1;
+}
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    height: 300px;
+    object-fit: cover;
+}
+.tz-gallery .row {
+    gap: 30px 0px !important;
+}
+.layout_flex{
+  display: flex;
+  flex-direction: column;
+}
+.product_detail-banner-left-para{
+  gap:12px
+}
+.product_detail-banner-left p.sub_heading {
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.product_detail-banner-left {
+    gap: 24px;
+    margin-right: 100px;
+}
+.product_detail-image-wrapper{
+  position: relative;
+width: 100%;
+  height: 472px;
+      padding-right: 1.125rem;
+    padding-bottom: 1.125rem;
+}
+.product_detail-image-wrapper::before {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    background: #2a6ab3;
+    content: "";
+}
+.product_detail-image-wrapper img {
+    position: relative;
+    z-index: 9;
+    border-radius: 24px;
+    object-fit: cover;
+}
+.product_overview-card h5, .product_features-card h5 {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+.product_overview-card {
+       padding: 65px;
+    border-right: 1px solid #00000024;
+    border-top: 1px solid #00000024;
+}
+.product_overview-card.no_border {
+    border-right: 0;
+}
+.product_features{
+  background-color: #2a6ab3;
+}
+
+
+
+
+
 /*=================================== media query css ===================================*/
 /*=================================== media query css ===================================*/
 
