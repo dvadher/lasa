@@ -1089,8 +1089,8 @@ a.btn_text {
     margin-top: 60px;
 }
 .client_logo-card img {
-    width: 120px;
-    height: 40px;
+       width: 200px;
+    height: 100px;
     object-fit: contain;
 }
 .client_logo-card {
@@ -1400,7 +1400,9 @@ width: 100%;
 .product_features{
   background-color: #2a6ab3;
 }
-
+.client_logo-card.last:after {
+    background: transparent;
+}
 
 
 
