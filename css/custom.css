@@ -88,8 +88,8 @@ span.text-gradiant {
   padding:100px 0px;
 }
 .custom-logo{
-  width: 90px;
-  height: 44px;
+    width: 80px;
+    height: 80px;
   object-fit: contain;
 }
 .navbar {
@@ -880,12 +880,11 @@ button.slick-next.slick-arrow {
   align-items: center;
 }
 .menu_center {
-    background-color: #2a6ab3;
+ background-color: #fff;
     border: 8px solid #fff;
-    width: 120px;
-    height: 120px;
-    display: flex
-;
+    width: 100px;
+    height: 100px;
+    display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
@@ -1029,8 +1028,9 @@ a.footer_btn {
   display: inline-flex;
 }
 .custom-footer .custom-logo{
-  width: 100px;
+     width: 100px;
     height: 100px;
+    object-fit: contain;
 }.footer-copyright p, .footer-copyright span {
   color: #fff;
 }
